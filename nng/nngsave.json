@@ -9,15 +9,18 @@
     },
     {
       "lean": "lemma example2 (x y : mynat) (h : y = x + 7) : 2 * y = 2 * (x + 7) :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "rw h,\nrefl,"
     },
     {
       "lean": "lemma example3 (a b : mynat) (h : succ a = b) : succ(succ(a)) = succ(b) :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "rw ← h,\nrefl,"
     },
     {
       "lean": "lemma add_succ_zero (a : mynat) : a + succ(0) = succ(a) :=\n",
-      "editorText": "sorry"
+      "isSolved": true,
+      "editorText": "rw add_succ,\nrw add_zero,\nrefl,"
     },
     {
       "lean": "lemma zero_add (n : mynat) : 0 + n = n :=\n",
